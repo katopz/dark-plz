@@ -9,7 +9,10 @@ body.dark-mode video {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* Ensure all elements within the body are affected, except img and svg */
-body.dark-mode *:not(img):not(svg) {
+/* Ensure all elements within the body are affected, except img, svg, and divs with display: none */
+body.dark-mode
+  *:not(img):not(svg):not(div[style*="display: none"]):not(
+    div.cdk-overlay-container
+  ) {
   background-color: inherit;
 }
