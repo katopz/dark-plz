@@ -13,6 +13,6 @@ body.dark-mode video {
 body.dark-mode
   *:not(img):not(svg):not(div[style*="display: none"]):not(
     div.cdk-overlay-container
-  ) {
+  ):not(a.button) {
   background-color: inherit;
 }
