@@ -4,11 +4,12 @@ body.dark-mode {
 }
 
 body.dark-mode img,
+body.dark-mode iframe,
 body.dark-mode video {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* Ensure all elements within the body are affected */
-body.dark-mode * {
+/* Ensure all elements within the body are affected, except img and svg */
+body.dark-mode *:not(img):not(svg) {
   background-color: inherit;
 }
