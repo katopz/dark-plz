@@ -10,12 +10,7 @@ body.dark-mode div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* This cause problem more than fixing so i will leave it here for now */
-/* body.dark-mode
-  *:not(img):not(svg):not(div[style*="display: none"]):not(
-    div.cdk-overlay-container
-  ):not(a.button):not(pre):not(span):not(div.md-code-block):not(
-    div[style*="opacity: 1"]
-  ):not(button):not(button *) {
+/* For Google Document, can break other site but i don't care */
+body.dark-mode section {
   background-color: inherit;
-} */
+}
