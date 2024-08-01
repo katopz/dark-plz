@@ -42,11 +42,7 @@ function observeDOMChanges() {
   const observer = new MutationObserver((mutationsList, observer) => {
     for (let mutation of mutationsList) {
       if (mutation.type === "childList") {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme) {
-          document.body.classList.remove("dark-mode", "light-mode");
-          document.body.classList.add(savedTheme);
-        }
+        loadTheme();
       }
     }
   });
