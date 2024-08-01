@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Theme Extension",
+  "version": "1.0",
+  "description": "Applies a dark theme using CSS filters.",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_title": "Toggle Dark Theme"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
