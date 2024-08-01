@@ -10,11 +10,12 @@ body.dark-mode div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
-body.dark-mode
+/* This cause problem more than fixing so i will leave it here for now */
+/* body.dark-mode
   *:not(img):not(svg):not(div[style*="display: none"]):not(
     div.cdk-overlay-container
   ):not(a.button):not(pre):not(span):not(div.md-code-block):not(
     div[style*="opacity: 1"]
   ):not(button):not(button *) {
   background-color: inherit;
-}
+} */
