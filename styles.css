@@ -1,0 +1,14 @@
+body.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #fff; /* Ensure the background is white for proper inversion */
+}
+
+body.dark-mode img,
+body.dark-mode video {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Ensure all elements within the body are affected */
+body.dark-mode * {
+  background-color: inherit;
+}
