@@ -1,6 +1,6 @@
 body.dark-mode {
   filter: invert(1) hue-rotate(180deg);
-  background-color: #fff; /* Ensure the background is white for proper inversion */
+  background-color: #fff;
 }
 
 body.dark-mode img,
@@ -10,10 +10,11 @@ body.dark-mode div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* Ensure all elements within the body are affected, except img, svg, and divs with display: none */
 body.dark-mode
   *:not(img):not(svg):not(div[style*="display: none"]):not(
     div.cdk-overlay-container
-  ):not(a.button):not(pre):not(span):not(div.md-code-block) {
+  ):not(a.button):not(pre):not(span):not(div.md-code-block):not(
+    div[style*="opacity: 1"]
+  ):not(button):not(button *) {
   background-color: inherit;
 }
