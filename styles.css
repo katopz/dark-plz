@@ -5,7 +5,8 @@ body.dark-mode {
 
 body.dark-mode img,
 body.dark-mode iframe,
-body.dark-mode video {
+body.dark-mode video,
+body.dark-mode div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
@@ -13,6 +14,6 @@ body.dark-mode video {
 body.dark-mode
   *:not(img):not(svg):not(div[style*="display: none"]):not(
     div.cdk-overlay-container
-  ):not(a.button) {
+  ):not(a.button):not(pre):not(span):not(div.md-code-block) {
   background-color: inherit;
 }
