@@ -42,15 +42,15 @@ function loadTheme() {
       // For https://arxiv.org/
       const embed = document.body.querySelector("embed");
       if (!embed) {
-        body.classList.add(savedTheme);
+        if (savedTheme == "dark-mode") {
+          body.classList.add(savedTheme);
+        }
       } else if (savedTheme == "dark-mode") {
         embed.style.filter = "invert(1) hue-rotate(180deg)";
       } else {
         embed.style.filter = "";
       }
     }
-  } else {
-    body.classList.add("light-mode");
   }
 }
 
