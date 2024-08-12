@@ -4,13 +4,14 @@ body.dark-mode {
 }
 
 body.dark-mode img,
+body.dark-mode embed,
 body.dark-mode iframe,
 body.dark-mode video,
 body.dark-mode div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* For Google Document, can break other site but i don't care */
+/* For Google Document, can break other site */
 body.dark-mode section {
-  background-color: inherit;
+  background-color: #fff;
 }
