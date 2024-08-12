@@ -1,17 +1,17 @@
-body.dark-mode {
+body.dark-plz {
   filter: invert(1) hue-rotate(180deg);
   background-color: #fff;
 }
 
-body.dark-mode img,
-body.dark-mode embed,
-body.dark-mode iframe,
-body.dark-mode video,
-body.dark-mode div.md-code-block {
+body.dark-plz img,
+body.dark-plz embed,
+body.dark-plz iframe,
+body.dark-plz video,
+body.dark-plz div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
 /* For Google Document, can break other site */
-body.dark-mode section {
+body.dark-plz section {
   background-color: #fff;
 }

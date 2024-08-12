@@ -4,16 +4,16 @@ function toggleDarkMode() {
   if (body.classList.contains("light")) {
     body.classList.remove("light");
     body.classList.add("dark");
-    localStorage.setItem("theme", "dark-mode");
+    localStorage.setItem("theme", "dark-plz");
   } else if (body.classList.contains("dark")) {
     body.classList.remove("dark");
     body.classList.add("light");
-    localStorage.setItem("theme", "light-mode");
+    localStorage.setItem("theme", "light-plz");
   } else {
     // For https://arxiv.org/
     const embed = document.body.querySelector("embed");
     if (!embed) {
-      body.classList.toggle("dark-mode");
+      body.classList.toggle("dark-plz");
     } else if (embed.style.filter === "") {
       embed.style.filter = "invert(1) hue-rotate(180deg)";
     } else {
@@ -21,7 +21,7 @@ function toggleDarkMode() {
     }
     localStorage.setItem(
       "theme",
-      body.classList.contains("dark-mode") ? "dark-mode" : "light-mode"
+      body.classList.contains("dark-plz") ? "dark-plz" : "light-plz"
     );
   }
 }
@@ -42,10 +42,10 @@ function loadTheme() {
       // For https://arxiv.org/
       const embed = document.body.querySelector("embed");
       if (!embed) {
-        if (savedTheme == "dark-mode") {
+        if (savedTheme == "dark-plz") {
           body.classList.add(savedTheme);
         }
-      } else if (savedTheme == "dark-mode") {
+      } else if (savedTheme == "dark-plz") {
         embed.style.filter = "invert(1) hue-rotate(180deg)";
       } else {
         embed.style.filter = "";
