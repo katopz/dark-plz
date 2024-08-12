@@ -64,14 +64,10 @@ function observeDOMChanges() {
     }
   });
 
-  // Observe all immediate children of the body
-  const bodyChildren = document.body.children;
-  for (let child of bodyChildren) {
-    observer.observe(child, {
-      childList: true,
-      subtree: true,
-    });
-  }
+  observer.observe(document.head, {
+    childList: true,
+    subtree: true,
+  });
 }
 
 // Load the theme when the page loads
