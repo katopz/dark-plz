@@ -12,6 +12,9 @@ body.dark-plz div.md-code-block {
 }
 
 /* For Google Document, can break other site */
+body.dark-plz nav,
+body.dark-plz header,
+body.dark-plz footer,
 body.dark-plz section,
 body.dark-plz article,
 body.dark-plz main,
