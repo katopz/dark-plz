@@ -14,6 +14,8 @@ body.dark-plz div.md-code-block {
 /* For Google Document, can break other site */
 body.dark-plz section,
 body.dark-plz article,
-body.dark-plz main {
+body.dark-plz main,
+/* For script.google.com */
+body.dark-plz c-wiz {
   background-color: #fff;
 }

@@ -24,6 +24,7 @@ Chrome Extension for forcing dark theme to any web by apply css filter invert.
 - Google Developers: https://developers.google.com/
 - PDF viewer e.g.: https://arxiv.org/pdf/2408.02442
 - Hidden theme e.g.: https://chat.deepseek.com/
+- AppScript: https://script.google.com/
 
 ## Coffee
 
