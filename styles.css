@@ -7,6 +7,7 @@ body.dark-plz img,
 body.dark-plz embed,
 body.dark-plz iframe,
 body.dark-plz video,
+body.dark-plz pre,
 body.dark-plz div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
@@ -19,6 +20,8 @@ body.dark-plz section,
 body.dark-plz article,
 body.dark-plz main,
 /* For script.google.com */
-body.dark-plz c-wiz {
+body.dark-plz c-wiz,
+/* For calendar.google.com */
+body.dark-plz .SGWAac {
   background-color: #fff;
 }
