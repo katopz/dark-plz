@@ -1,5 +1,6 @@
 function toggleDarkMode() {
   const body = document.body;
+
   // For https://chat.deepseek.com/
   if (body.classList.contains("light")) {
     body.classList.remove("light");
@@ -10,10 +11,12 @@ function toggleDarkMode() {
     body.classList.add("light");
     localStorage.setItem("theme", "light-plz");
   } else {
+    const html = document.documentElement;
+
     // For https://arxiv.org/
     const embed = document.body.querySelector("embed");
     if (!embed) {
-      body.classList.toggle("dark-plz");
+      html.classList.toggle("dark-plz");
     } else if (embed.style.filter === "") {
       embed.style.filter = "invert(1) hue-rotate(180deg)";
     } else {
@@ -21,7 +24,7 @@ function toggleDarkMode() {
     }
     localStorage.setItem(
       "theme",
-      body.classList.contains("dark-plz") ? "dark-plz" : "light-plz"
+      html.classList.contains("dark-plz") ? "dark-plz" : "light-plz"
     );
   }
 }
@@ -29,6 +32,7 @@ function toggleDarkMode() {
 // Function to load the theme from localStorage
 function loadTheme() {
   const body = document.body;
+
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) {
     // For https://chat.deepseek.com/
@@ -39,11 +43,12 @@ function loadTheme() {
       body.classList.remove("dark");
       body.classList.add(savedTheme.split("-")[0]);
     } else {
+      const html = document.documentElement;
       // For https://arxiv.org/
       const embed = document.body.querySelector("embed");
       if (!embed) {
         if (savedTheme == "dark-plz") {
-          body.classList.add(savedTheme);
+          html.classList.add(savedTheme);
         }
       } else if (savedTheme == "dark-plz") {
         embed.style.filter = "invert(1) hue-rotate(180deg)";

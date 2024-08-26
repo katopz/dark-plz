@@ -1,27 +1,27 @@
-body.dark-plz {
+html.dark-plz {
   filter: invert(1) hue-rotate(180deg);
   background-color: #fff;
 }
 
-body.dark-plz img,
-body.dark-plz embed,
-body.dark-plz iframe,
-body.dark-plz video,
-body.dark-plz pre,
-body.dark-plz div.md-code-block {
+html.dark-plz img,
+html.dark-plz embed,
+html.dark-plz iframe,
+html.dark-plz video,
+html.dark-plz pre,
+html.dark-plz div.md-code-block {
   filter: invert(1) hue-rotate(180deg);
 }
 
 /* For Google Document, can break other site */
-body.dark-plz nav,
-body.dark-plz header,
-body.dark-plz footer,
-body.dark-plz section,
-body.dark-plz article,
-body.dark-plz main,
+html.dark-plz nav,
+html.dark-plz header,
+html.dark-plz footer,
+html.dark-plz section,
+html.dark-plz article,
+html.dark-plz main,
 /* For script.google.com */
-body.dark-plz c-wiz,
+html.dark-plz c-wiz,
 /* For calendar.google.com */
-body.dark-plz .SGWAac {
+html.dark-plz .SGWAac {
   background-color: #fff;
 }
