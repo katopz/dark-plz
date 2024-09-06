@@ -9,7 +9,9 @@ html.dark-plz iframe,
 html.dark-plz video,
 html.dark-plz pre,
 html.dark-plz div.md-code-block {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1);
+  /* For https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/ */
+  filter: hue-rotate(180deg);
 }
 
 /* For Google Document, can break other site */
