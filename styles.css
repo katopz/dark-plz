@@ -7,11 +7,15 @@ html.dark-plz img,
 html.dark-plz embed,
 html.dark-plz iframe,
 html.dark-plz video,
-html.dark-plz pre,
-html.dark-plz div.md-code-block {
+html.dark-plz pre {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* For https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/ */
+html.dark-plz div.md-code-block,
+html.dark-plz .highlight {
   filter: invert(1);
-  /* For https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/ */
-  filter: hue-rotate(180deg);
+  background-color: black;
 }
 
 /* For Google Document, can break other site */
