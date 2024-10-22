@@ -9,7 +9,8 @@ html.dark-plz iframe,
 html.dark-plz video,
 /* For https://ai.google.dev/gemini-api/docs */
 html.dark-plz tab,
-html.dark-plz pre {
+html.dark-plz pre,
+html.dark-plz code {
   filter: invert(1) hue-rotate(180deg);
 }
 
