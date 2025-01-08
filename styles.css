@@ -10,15 +10,26 @@ html.dark-plz video,
 /* For https://ai.google.dev/gemini-api/docs */
 html.dark-plz tab,
 html.dark-plz pre,
-html.dark-plz code {
+html.dark-plz code,
+html.dark-plz devsite-code {
   filter: invert(1) hue-rotate(180deg);
 }
 
 /* For https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/ */
 html.dark-plz div.md-code-block,
-html.dark-plz .highlight {
+html.dark-plz .highlight,
+html.dark-plz p code,
+html.dark-plz h1 code {
   filter: invert(1);
-  background-color: black;
+  background-color: #222222;
+}
+
+html.dark-plz pre {
+  background-color: #eeeeee;
+}
+
+html.dark-plz code {
+  color: #eeeeee;
 }
 
 /* For Google Document, can break other site */
