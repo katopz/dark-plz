@@ -13,7 +13,7 @@ html.dark-plz tab a,
 html.dark-plz pre,
 html.dark-plz code,
 /* for https://cloud.google.com/run/docs/samples */
-html.dark-plz devsite-code {
+html.dark-plz devsite-code,
 html.dark-plz devsite-tabs-dropdown-column {
   filter: invert(1) hue-rotate(180deg);
 }
