@@ -25,6 +25,7 @@ html.dark-plz h1 code {
 }
 
 html.dark-plz pre {
+  color: initial;
   background-color: #eeeeee;
 }
 
