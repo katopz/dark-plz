@@ -20,6 +20,10 @@ html.dark-plz tab .devsite-tabs-content {
   filter: invert(1) hue-rotate(180deg);
 }
 
+html.dark-plz img[src$=".png"] {
+  background-color: #fff;
+}
+
 /* https://ai.google.dev/gemini-api/docs#node.js */
 html.dark-plz devsite-tabs tab.devsite-overflow-tab {
   filter: none;
