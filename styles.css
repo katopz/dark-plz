@@ -11,12 +11,22 @@ html.dark-plz video,
 html.dark-plz tab,
 html.dark-plz tab a,
 html.dark-plz pre,
-html.dark-plz code,
+html.dark-plz pre code,
 /* for https://cloud.google.com/run/docs/samples */
 html.dark-plz devsite-code,
 html.dark-plz .devsite-tabs-dropdown,
-html.dark-plz .devsite-tabs-dropdown-column {
+html.dark-plz .devsite-tabs-dropdown-column,
+html.dark-plz tab .devsite-tabs-content {
   filter: invert(1) hue-rotate(180deg);
+}
+
+/* https://ai.google.dev/gemini-api/docs#node.js */
+html.dark-plz devsite-tabs tab.devsite-overflow-tab {
+  filter: none;
+}
+
+html.dark-plz devsite-tabs.lower-tabs tab {
+  filter: none;
 }
 
 /* For https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/ */
@@ -24,17 +34,12 @@ html.dark-plz div.md-code-block,
 html.dark-plz .highlight,
 html.dark-plz p code,
 html.dark-plz h1 code {
-  filter: invert(1);
-  background-color: #222222;
+  filter: invert(1) hue-rotate(180deg);
 }
 
 html.dark-plz pre {
   color: initial;
   background-color: #eeeeee;
-}
-
-html.dark-plz code {
-  color: #eeeeee;
 }
 
 /* For Google Document, can break other site */
